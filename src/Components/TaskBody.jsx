@@ -34,7 +34,7 @@ const TaskBody = () => {
     }
 
     try {
-      const response = await axios.put(`http://localhost:5000/updateCategory/${id}`, {
+      const response = await axios.put(`https://task-flow-server-peach.vercel.app/updateCategory/${id}`, {
         category: newCategory,
       });
 
@@ -49,7 +49,7 @@ const TaskBody = () => {
 
   const handleDelete = async (id) => {
     try {
-      const { data } = await axios.delete(`http://localhost:5000/tasks/${id}`);
+      const { data } = await axios.delete(`https://task-flow-server-peach.vercel.app/tasks/${id}`);
       if (data.deletedCount > 0) {
         toast.success("Task deleted successfully");
         refetch(); // Refetch tasks after deletion
@@ -62,7 +62,7 @@ const TaskBody = () => {
 
   const handleUpdate = async (id) => {
     try {
-      const { data } = await axios.get(`http://localhost:5000/tasks/${id}`);
+      const { data } = await axios.get(`https://task-flow-server-peach.vercel.app/tasks/${id}`);
       if (data) {
         setIsOpen(true);
         setTask(data);

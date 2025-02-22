@@ -18,7 +18,7 @@ const useGotTasks = () => {
       if (!user?.email) return []; 
       try {
         const { data } = await axios.get(
-          `http://localhost:5000/tasks?email=${user.email}`
+          `https://task-flow-server-peach.vercel.app/tasks?email=${user.email}`
         );
         return data;
       } catch (err) {
