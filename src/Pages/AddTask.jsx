@@ -58,20 +58,20 @@ const AddTask = () => {
           value={title}
           onChange={(e) => setTitle(e.target.value)}
           required
-          className="w-full p-3 border-2 border-purple-200 rounded-lg focus:outline-none focus:border-purple-500 transition-all text-lg bg-white"
+          className="w-full p-3 border-2 border-purple-200 rounded-lg focus:outline-none focus:border-purple-500 transition-all text-lg bg-white text-black"
         />
         <textarea
           placeholder="Description (optional)"
           maxLength={200}
           value={description}
           onChange={(e) => setDescription(e.target.value)}
-          className="w-full p-3 border-2 border-purple-200 rounded-lg focus:outline-none focus:border-purple-500 transition-all text-lg bg-white resize-none min-h-[100px]"
+          className="w-full p-3 border-2 border-purple-200 rounded-lg focus:outline-none focus:border-purple-500 transition-all text-lg bg-white text-black resize-none min-h-[100px]"
         />
         <div className="flex items-center gap-4">
           <select
             value={category}
             onChange={(e) => setCategory(e.target.value)}
-            className="p-3 border-2 border-purple-200 rounded-lg focus:outline-none focus:border-purple-500 transition-all text-lg bg-white flex-1"
+            className="p-3 border-2 border-purple-200 rounded-lg focus:outline-none focus:border-purple-500 transition-all text-lg bg-white text-black flex-1"
           >
             <option value="todo">To-Do</option>
             <option value="progress">In Progress</option>
@@ -80,7 +80,7 @@ const AddTask = () => {
           <button
             type="submit"
             disabled={isFetching}
-            className="p-3 bg-purple-600 text-white rounded-lg hover:bg-purple-700 focus:outline-none focus:ring-2 focus:ring-purple-500 focus:ring-offset-2 transition-all flex-1 text-lg font-semibold"
+            className="p-3 bg-purple-600 text-black rounded-lg hover:bg-purple-700 focus:outline-none focus:ring-2 focus:ring-purple-500 focus:ring-offset-2 transition-all flex-1 text-lg font-semibold"
           >
             {isFetching ? "Adding Task..." : "Add Task"}
           </button>

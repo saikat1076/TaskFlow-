@@ -63,14 +63,14 @@ JWT_SECRET=your-jwt-secret-key
 PORT=4545
 Start the Development Servers
 
-For Frontend:
+1. For Frontend:
 
-```bash
+
 cd client
 npm start
 For Backend:
 
-```bash
+
 cd server
 npm start
 Open the application
