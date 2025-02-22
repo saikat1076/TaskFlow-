@@ -6,8 +6,8 @@
 
 ## Live Links
 
-- **Project Demo**: [TaskFlow Live Demo](http://your-live-link.com)  
-- **GitHub Repository**: [TaskFlow GitHub](https://github.com/your-username/taskflow)
+- **Project Demo**: [TaskFlow Live Demo](https://taskflow-24416.web.app)  
+- **GitHub Repository**: [TaskFlow GitHub](https://github.com/saikat1076/TaskFlow-sarvar)
 
 ---
 
@@ -36,45 +36,44 @@ TaskFlow is a **task management system** that helps users stay organized and pro
 
 ---
 
-## Installation Steps
+## 🏃‍♂ Local Development Guide
 
-1. **Clone the repository**
-   ```bash
-   git clone https://github.com/your-username/taskflow.git
+Follow these steps to run the project locally on your machine:
 
-Install dependencies
+1. *Clone the repository*:
+    bash
+    git clone https://github.com/saikat-1076/taskflow-.git
+    cd taskflow-
+    
 
-For Frontend:
+2. *Install dependencies*:
+    Run the following command to install all the required dependencies:
+    bash
+    npm install
+    
 
-```bash
-cd client
-npm install
-For Backend:
+3. *Set up environment variables*:
+    Create a .env file in the root directory of the project and add your MongoDB URI and JWT secret key:
+    
+    MONGODB_URI=your-mongodb-uri-here
+    JWT_SECRET=your-secret-key-here
+    
 
-```bash
-cd server
-npm install
-Configure the environment variables
+4. *Run the backend server*:
+    To start the backend server, run:
+    bash
+    npm run server
+    
 
-Create a .env file in the root directory of the server folder with the following variables:
-```bash
-MONGO_URI=your-mongodb-connection-string
-JWT_SECRET=your-jwt-secret-key
-PORT=4545
-Start the Development Servers
+5. *Run the frontend development server*:
+    In a separate terminal window, run the following command to start the frontend:
+    bash
+    npm run client
+    
 
-1. For Frontend:
+6. *Open the app in your browser*:
+    After starting both the backend and frontend, open your browser and navigate to http://localhost:3000 to see the live version of the app running locally.
 
-
-cd client
-npm start
-For Backend:
-
-
-cd server
-npm start
-Open the application
-The frontend will be available at http://localhost:3000 and the backend will run on http://localhost:4545.
 
 Technologies Used
 Frontend:
